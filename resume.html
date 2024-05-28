@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Resume - Irving's Portfolio</title>
+</head>
+<body>
+    <!-- Include header -->
+    <div id="header"></div>
+
+    <main>
+        <h1>Irving's Portfolio</h1>
+        <h2>Resume</h2>
+        <p>This is a PDF.</p>
+        <button onclick="downloadResume()">Download</button>
+        <button onclick="zoomResume()">Zoom</button>
+    </main>
+
+    <script>
+        function downloadResume() {
+            window.location.href = 'path/to/your/resume.pdf';
+        }
+
+        function zoomResume() {
+            // Implement zoom functionality if needed
+        }
+
+        // Load the header
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header').innerHTML = data;
+            });
+    </script>
+</body>
+</html>
