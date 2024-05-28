@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Contact Info - Irving's Portfolio</title>
+</head>
+<body>
+    <!-- Include header -->
+    <div id="header"></div>
+
+    <main>
+        <h2>Contact Info</h2>
+        <p>Hello, this is the Contact Info page.</p>
+    </main>
+
+    <script>
+        // Load the header
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header').innerHTML = data;
+            });
+    </script>
+</body>
+</html>
