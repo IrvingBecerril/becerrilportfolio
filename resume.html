@@ -11,22 +11,17 @@
     <div id="header"></div>
 
     <main>
-        <h1>Irving's Portfolio</h1>
-        <h2>Resume</h2>
-        <p>This is a PDF.</p>
-        <button onclick="downloadResume()">Download</button>
-        <button onclick="zoomResume()">Zoom</button>
+        <h1>Resume</h1>
+        <div class="pdf-container">
+            <iframe src="C:\Users\irvin\becerrilportfolio\Irving Becerril Resume 05.22.2024.pdf" width="100%" height="600px"></iframe>
+        </div>
+        <br>
+        <a href="C:\Users\irvin\becerrilportfolio\Irving Becerril Resume 05.22.2024.pdf" download>
+            <button>Download</button>
+        </a>
     </main>
 
     <script>
-        function downloadResume() {
-            window.location.href = 'path/to/your/resume.pdf';
-        }
-
-        function zoomResume() {
-            // Implement zoom functionality if needed
-        }
-
         // Load the header
         fetch('header.html')
             .then(response => response.text())
