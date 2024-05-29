@@ -78,14 +78,17 @@ button {
     cursor: pointer;
 }
 
+/* Existing CSS content remains unchanged */
+
 /* Media query for smaller screens */
 @media (max-width: 600px) {
     nav ul {
         flex-direction: column;
+        align-items: center;
     }
 
     nav ul li {
-        margin: 5px 0;
+        margin: 10px 0;
     }
 
     .header-container {
